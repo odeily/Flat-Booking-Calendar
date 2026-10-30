@@ -1,0 +1,80 @@
+# ==============================================================================
+# Secretos, Variables de Entorno y Credenciales (NUNCA SUBIR A GIT)
+# ==============================================================================
+env.json
+.env
+.env.*
+!env.example.json
+!.env.example
+supabase/.temp/
+supabase/.branches/
+
+# Claves de firma Android / iOS / Firebase
+**/key.properties
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.mobileprovision
+android/local.properties
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# ==============================================================================
+# Binarios Compilados y Entregables Locales
+# ==============================================================================
+*.apk
+*.aab
+*.ipa
+/releases/
+/build/
+/coverage/
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# ==============================================================================
+# Flutter / Dart / Herramientas de Desarrollo
+# ==============================================================================
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+app.*.symbols
+app.*.map.json
+
+# Archivos efímeros autogenerados por plataforma (contienen rutas locales de máquina)
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/ephemeral/
+ios/Pods/
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# Herramientas auxiliares CLI locales (Supabase / Node)
+node_modules/
+package.json
+package-lock.json
+
+# ==============================================================================
+# IDEs y Sistema Operativo
+# ==============================================================================
+*.class
+*.log
+*.pyc
+*.swp
+*.iml
+*.ipr
+*.iws
+.idea/
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
